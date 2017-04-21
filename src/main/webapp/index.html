@@ -1,25 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Java Web Starter Application</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<link rel="stylesheet" href="style.css" />
+<!-- All CSS Plugins -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
 </head>
-<body>
-	<table>
-		<tr>
-			<td style='width: 30%;'>
-				<img class = "newappIcon" src='images/newapp-icon.png'>
-			</td>
-			<td>
-				<!-- The "Hello World!" message comes from /SimpleServlet -->
-				<h1 id = "message"></h1>
-				
-				<p class='description'></p> Thanks for creating a <span class="blue">Liberty for Java Starter Application</span>.
-			</td>
-		</tr>
-	</table>
-	<!-- Call SimpleServlet to get the "Hello World" message  -->
-	<script type="text/javascript" src="index.js"></script>
+	<body>
+			  <h1><span class="typingBegin"></span></h1>
+			  <br>
+			  <br>
+			  <br>
+			  
+		  <form class="form-horizontal">
+		  <div class="form-group">
+			<label for="inputEmail3"  class="col-sm-2 control-label">Email</label>
+			<div class="col-xs-4">
+			  <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+			</div>
+		  </div>
+		  <div class="form-group">
+			<label for="inputPassword3"  class="col-sm-2 control-label">Password</label>
+			<div class="col-xs-4">
+			  <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+			</div>
+		  </div>
+
+		  <div class="form-group">
+			<div class="col-sm-offset-2 col-xs-4">
+			  <input type="button" class="btn btn-default" value="Sign in" id="logIn">
+			</div>
+		  </div>
+		</form>
+		<fb:login-button class="col-sm-offset-2 col-xs-4" scope="public_profile,email" onlogin="checkLoginState();">
+		 </fb:login-button>
+		 <input type="button" class="btn btn-default" value="Cerrar Sesion" onclick="logOut()">
+
+			
+
+ <!-- All Javascript Plugins  -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/plugin.js"></script>
+    <script type="text/javascript" src="js/fb.js"></script>
+    <script type="text/javascript" src="js/ControlBotonesInterfaz.js"></script>
+    
+    <!-- Main Javascript File  -->
+    <script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>
